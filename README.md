@@ -1,72 +1,46 @@
-\# 🛡️ VulnGuard AI
+🛡️ VulnGuard AI
 
+A smart contract security scanner I built to learn Web3 security and full-stack development.
 
+---
+ What it does
 
-\## AI-Powered Smart Contract Security Scanner
+Paste any Solidity contract → get a risk score + list of vulnerabilities.
 
+✅ Working now:
+- Detects 7 vulnerability patterns
+- Severity breakdown (Critical → Low)
+- Clean dark UI dashboard
 
+**🚧 Work in progress:**
+- ML model (placeholder for now)
+- Live mempool monitoring (code ready, not integrated yet)
 
-!\[Dashboard Screenshot](screenshot.png)
+---
 
+## Tech stack
 
+| Layer | What I used |
+|-------|-------------|
+| Frontend | React + Recharts |
+| Backend | Node.js + Express |
+| Scanner | Python + regex |
+| Blockchain | viem |
 
-VulnGuard AI is a full-stack web application that analyzes Solidity smart contracts for security vulnerabilities using rule-based detection and machine learning. It provides real-time risk scoring, severity visualization, and detailed vulnerability reports.
+---
 
+## Quick start
 
+```bash
+git clone https://github.com/Khushuuu009/vulnguard-ai.git
+cd vulnguard-ai
 
-\---
+# Backend
+cd backend
+npm install
+npm start
 
-
-
-\## ✨ Features
-
-
-
-| Feature | Description |
-
-|---------|-------------|
-
-| 🔍 \*\*Vulnerability Detection\*\* | Scans for 8+ common security issues (re-entrancy, tx.origin, timestamp dependence, etc.) |
-
-| 📊 \*\*Visual Dashboard\*\* | Real-time risk scoring, severity pie chart, and vulnerability list |
-
-| 🚀 \*\*Real-time Monitoring\*\* | WebSocket listener for mempool transactions |
-
-| 📄 \*\*Audit Reports\*\* | Generate professional PDF audit reports |
-
-| 🤖 \*\*AI-Powered (Coming Soon)\*\* | ML model trained on 10,000+ contracts |
-
-
-
-\---
-
-
-
-\## 🛠️ Tech Stack
-
-
-
-| Layer | Technology |
-
-|-------|------------|
-
-| \*\*Frontend\*\* | React + Recharts + CSS |
-
-| \*\*Backend\*\* | Node.js + Express + Viem |
-
-| \*\*ML Scanner\*\* | Python + Scikit-learn + XGBoost |
-
-| \*\*Blockchain\*\* | Viem + Hardhat + WebSocket |
-
-| \*\*Version Control\*\* | Git + GitHub |
-
-
-
-\---
-
-
-
-\## 📁 Project Structure
-
-
-
+# Frontend (new terminal)
+cd frontend
+npm install
+npm start
